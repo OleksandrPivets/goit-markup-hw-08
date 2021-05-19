@@ -105,10 +105,6 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
-.menu-contacts-link::before {
-  content: '';
-  background-image: url(../images/mail.png);
-}
 
 .menu-contacts-link:hover,
 .menu-contacts-link:focus {
@@ -139,9 +135,10 @@ img {
 /*=========HERO=========*/
 .hero {
   width: 1600px;
-  background-color: #2f303a;
   text-align: center;
   padding: 200px 0px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(..//images/hero.jpg);
 }
 
 .hero-title {
@@ -183,7 +180,52 @@ img {
 .about-us-list .about-us-item:not(:last-child) {
   margin-right: 30px;
 }
+.image1 {
+  margin: 0px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-image: url(..//images/antenna.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image2 {
+  margin: 0px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-image: url(..//images/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image3 {
+  margin: 0px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-image: url(..//images/comp.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image4 {
+  margin: 0px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-image: url(..//images/astronaut.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .suptitle {
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -259,6 +301,7 @@ img {
 
 .our-team-description {
   margin-top: 10px;
+  margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 16px;
@@ -268,11 +311,97 @@ img {
 }
 
 .card-team {
-  padding: 30px 32px;
+  padding: 30px 30px;
+}
+
+.social-links {
+  margin: 0px;
+  width: 206px;
+  height: 44px;
+  background-color: #000;
+}
+/* ==========CLIENT======= */
+.client {
+  padding: 94px 215px;
+}
+
+.company-list {
+  display: flex;
+}
+
+.company-item {
+  flex-basis: calc(100% / 6);
+}
+
+.company1 {
+  margin: 0px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-image: url(..//images/company1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.company2 {
+  margin: 0px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-image: url(..//images/company2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company3 {
+  margin: 0px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-image: url(..//images/company3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company4 {
+  margin: 0px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-image: url(..//images/company4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company5 {
+  margin: 0px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-image: url(..//images/company5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company6 {
+  margin: 0px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-image: url(..//images/company6.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*==========FOOTER=======*/
 
 .footer {
+  display: flex;
+
   font-family: 'Roboto', sans-serif;
   background-color: #2f303a;
   padding-top: 60px;
@@ -300,6 +429,7 @@ img {
 }
 
 .footer-address {
+  display: flex;
   margin-top: 20px;
 
   font-style: normal;
@@ -327,7 +457,20 @@ img {
 .footer-link:focus {
   color: var(--accent-color);
 }
+.footer-social {
+  margin-top: -72px;
+  margin-left: 70px;
+}
+.h3-footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
+  color: #ffffff;
+}
 /*=====PORTFOLIO MENU=======*/
 .menu-portfolio {
   display: block;
