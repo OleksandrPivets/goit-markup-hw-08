@@ -316,8 +316,7 @@ img {
 }
 .social-list {
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
+  width: 206px;
   justify-content: space-between;
 }
 .social-list-icon {
