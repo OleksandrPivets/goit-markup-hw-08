@@ -44,7 +44,7 @@
         <!--============HERO=========-->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="modal-bth" type="button">Заказать услугу</button>
+            <button class="modal-bth" type="button" data-modal-open>Заказать услугу</button>
         </section>
 
         <!--=========Наши плюсы============-->
@@ -344,7 +344,18 @@
             </ul>
         </div>
         </div>
-        
         </footer>
+        /*==========MODAL WINDOW==========*/
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" data-modal-close>
+                    <svg class="close-btn">
+                        <use href="./images/sprint.svg#close-btn"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <script src="./js/modal.js"></script>
 </body>
 </html>
