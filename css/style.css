@@ -282,6 +282,30 @@ img {
 .our-work-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.our-work-container {
+  position: relative;
+}
+
+.our-work-suptitle {
+  position: absolute;
+  top: 224px;
+  left: 0px;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background: rgba(47, 48, 58, 0.8);
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 /*=========OUR-TEAM======*/
 .our-team {
   background-color: #f5f4fa;
