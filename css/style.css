@@ -863,3 +863,13 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+.modal-form-policy-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: #2196f3;
+}
