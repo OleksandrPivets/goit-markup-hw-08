@@ -758,8 +758,6 @@ img {
   height: 581px;
   background-color: #ffffff;
   padding: 40px;
-  display: flex;
-  flex-direction: column;
 }
 .close-button {
   position: absolute;
@@ -781,7 +779,10 @@ img {
   top: 8px;
   right: 8px;
 }
-
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
 .modal-form-head {
   font-weight: 700;
   font-size: 20px;
@@ -840,24 +841,25 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  margin-top: 4px;
 }
 
 .modal-form-btn {
   width: 200px;
   height: 50px;
+  margin: auto;
 
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
+  color: #ffffff;
 }
 
 .modal-form-checkbox-policy {
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 71;
-  /* identical to box height, or 171% */
-
   letter-spacing: 0.03em;
   color: #757575;
 }
