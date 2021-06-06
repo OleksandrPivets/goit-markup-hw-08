@@ -749,7 +749,6 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
-
 .modal {
   position: absolute;
   top: 50%;
@@ -758,6 +757,7 @@ img {
   width: 528px;
   height: 581px;
   background-color: #ffffff;
+  padding: 40px;
 }
 .close-button {
   position: absolute;
@@ -778,4 +778,13 @@ img {
   height: 11px;
   top: 8px;
   right: 8px;
+}
+
+.modal-form-head {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 12px;
 }

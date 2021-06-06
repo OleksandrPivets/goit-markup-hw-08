@@ -371,16 +371,40 @@
         </div>
         </footer>
         /*==========MODAL WINDOW==========*/
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop " data-modal>
             <div class="modal">
                 <button type="button"  class="close-button" data-modal-close>
                     <svg class="close-btn">
                         <use href="./images/sprint.svg#close-btn"></use>
                     </svg>
                 </button>
+                <form action="#" class="modal-form">
+                    <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
+                    <label class="modal-form-field">
+                        Имя
+                        <input type="text" name="user-name" class="modal-form-input" required>
+                    </label>
+                    <label class="modal-form-field">
+                        Телефон
+                        <input type="tel" name="user-phone" class="modal-form-input" required>
+                    </label>
+                    <label class="modal-form-field">
+                        Почта
+                        <input type="email" name="user-mail" class="modal-form-input" required>
+                    </label>
+                    <label class="modal-form-field">
+                        Комментарий
+                        <textarea name="user-message" class="modal-form-message"></textarea>
+                    </label>
+                    <input type="checkbox" name="user-policy" class="modal-form-checkbox" id="checkbox-policy" required>
+                    <label for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю <a class="modal-form-policy-link" href="#"> Условия договора</a></label>
+
+
+                    <button class="modal-form-btn" type="submit">Отправить</button>
+                </form>
             </div>
         </div>
         
-        <script src="./js/modal.js"></script>
+        <!--<script src="./js/modal.js"></script>-->
 </body>
 </html>
