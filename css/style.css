@@ -551,7 +551,7 @@ img {
 }
 
 .input-footer {
-  padding: 15px 295px 15px 16px;
+  padding-left: 16px;
   width: 358px;
   height: 50px;
   margin-right: 12px;
