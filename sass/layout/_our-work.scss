@@ -1,0 +1,15 @@
+.our-work {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+    
+  .our-work__list {
+    display: flex;
+  }
+  .our-work__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .our-work__container {
+    position: relative;
+  }

@@ -1,14 +1,15 @@
 .about-us {
     padding-top: 94px;
   }
-  .about-us-list {
+  .about-us__list {
     display: flex;
-  }
-  .about-us-list .about-us-item:not(:last-child) {
-    margin-right: 30px;
+
+    .about-us__item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   
-  .about-us-item::before {
+  .about-us__item::before {
     content: '';
     display: block;
     height: 120px;
@@ -31,25 +32,3 @@
   .icon-astronaut::before {
     background-image: url(..//images/astronaut.png);
   }
-  
-  
-  
-  
-  /*========Our work===========*/
-  .our-work {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  
-  .our-work-list {
-    display: flex;
-  }
-  .our-work-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  
-  .our-work-container {
-    position: relative;
-  }
-  

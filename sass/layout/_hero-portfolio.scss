@@ -3,6 +3,10 @@
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
+
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
   }
   
   .hero-portfolio-link {
@@ -10,40 +14,35 @@
     flex-basis: calc((100% - 90px) / 3);
     margin-top: 30px;
     margin-left: 30px;
-    
+
+    &:not(:nth-child(3n-2)) {
+      margin-left: 30px;
+    }    
   }
-  .hero-portfolio-list:nth-child(3n) {
-    margin-right: 0px;
-  }
-  
-  .hero-portfolio-link:not(:nth-child(3n-2)) {
-    margin-left: 30px;
-  }
-  
+ 
   .portfolio-card {
     border-top: none;
     border: 1px solid #eeeeee;
     padding: 20px 24px;
-  }
-  .portfolio-card:nth-child(3n) {
-    margin-right: 0px;
+
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
   }
   
   .hero-portfolio-link-wrapper{
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);  
-  }
-  
-  .hero-portfolio-link-wrapper:hover,
-  .hero-portfolio-link-wrapper:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-  }
-  
-  
-  .hero-portfolio-link-wrapper:hover .overlay,
-  .hero-portfolio-link-wrapper:focus .overlay {
-    transform: translateY(0%);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      cursor: pointer;
+
+      .overlay {
+        transform: translateY(0%);
+      }
+    }
   }
   
   .hero-portfolio-wrapper {

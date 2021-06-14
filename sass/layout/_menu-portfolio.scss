@@ -7,8 +7,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+    .menu-portfolio-link:not(:last-child) {
+      margin-right: 8px;
+    }
   }
-  .menu-portfolio-list .menu-portfolio-link:not(:last-child) {
-    margin-right: 8px;
-  }
-  
