@@ -1,0 +1,14 @@
+.menu-portfolio {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .menu-portfolio-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .menu-portfolio-list .menu-portfolio-link:not(:last-child) {
+    margin-right: 8px;
+  }
+  

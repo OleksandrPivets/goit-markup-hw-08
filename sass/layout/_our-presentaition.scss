@@ -1,0 +1,55 @@
+.about-us {
+    padding-top: 94px;
+  }
+  .about-us-list {
+    display: flex;
+  }
+  .about-us-list .about-us-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .about-us-item::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .icon-antenna::before {
+    background-image: url(..//images/antenna.png);
+  }
+  .icon-clock::before {
+    background-image: url(..//images/clock.png);
+  }
+  .icon-comp::before {
+    background-image: url(..//images/comp.png);
+  }
+  .icon-astronaut::before {
+    background-image: url(..//images/astronaut.png);
+  }
+  
+  
+  
+  
+  /*========Our work===========*/
+  .our-work {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  
+  .our-work-list {
+    display: flex;
+  }
+  .our-work-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .our-work-container {
+    position: relative;
+  }
+  
