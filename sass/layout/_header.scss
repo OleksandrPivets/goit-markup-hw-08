@@ -1,9 +1,4 @@
-.header {
-    border: 1px solid #ececec;
-    .container {
-        display: flex;
-  }
-  }
+
   
   .logo {
     font-family: 'Raleway', sans-serif;
@@ -22,8 +17,223 @@
     text-decoration: none;
     color: var(--main-color);
   }
-  
-  .header__nav {
+
+  .header {
+  max-width: 1600px;
+  height: 60px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #ececec;
+
+  &-wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
+  &__mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: inline-flex;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: var(---accent-color);
+    }
+  }
+}
+
+.menu{
+    display: none;
+}
+
+.menu__contacts{
+    display: none;
+}
+
+
+@media screen and(min-width:768px){
+  .header {
+    height: 80px;
+
+    &__mobile-menu-btn {
+      display: none;
+    }
+  }
+  .header-logo {
+    display: flex;
+    padding-top: 26px;
+    padding-left: 15px;
+  }
+
+  .header_nav {
+    display: flex;
+    align-items: center;
+
+  }
+    .menu {
+      display: flex;
+      margin-left: 88px;
+    
+      &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  .menu__contacts {
+    display: block;
+    margin-left: auto;
+
+    .menu__contacts-list:last-child {
+      margin-left: 50px;
+    }
+  }
+}
+
+@media screen and (min-width:1200px) {
+   
+.header {
+  border: 1px solid #ececec;
+  .container {
+      display: flex;
+}
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.logo2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.menu__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.menu__link-current {
+  color: var(--accent-color);
+  text-decoration: none;
+
+  &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: #2196f3;
+      border-radius: 2px;
+      margin-top: 28px;
+      margin-bottom: -1px;
+    }
+}
+.menu__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.menu__link-current {
+  color: var(--accent-color);
+  text-decoration: none;
+
+  &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: #2196f3;
+      border-radius: 2px;
+      margin-top: 28px;
+      margin-bottom: -1px;
+    }
+}
+
+.menu {
+  padding-top: 32px;
+  display: flex;
+  margin-left: 93px;
+
+  .menu__item:not(:last-child) {
+      margin-right: 50px;
+    }
+}  
+.menu__contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    
+    .icon-header {
+      color: var(--accent-color);
+      fill: var(--accent-color);
+    }
+      }
+}
+
+.menu__contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  .menu__contacts-list:last-child {
+    margin-left: 50px;
+  }
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #757575;
+}
+.icon-header {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}

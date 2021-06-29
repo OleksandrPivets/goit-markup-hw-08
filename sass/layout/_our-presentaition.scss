@@ -1,14 +1,48 @@
-.about-us {
-    padding-top: 94px;
-  }
   .about-us__list {
-    display: flex;
+    display: block;
+    list-style: none;
+    padding-left: 0;
+  }
+  //480+
+  @media screen and(min-width:480px){
+    .about-us__item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
 
-    .about-us__item:not(:last-child) {
-      margin-right: 30px;
+  }
+  //768+
+  @media screen and(min-width:768px){
+    .about-us__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    .about-us__item {
+      min-width: 354px;
+      min-height: 251px;
+      flex-basis: calc((100% - 60px) / 2);
+      margin: 15px;
     }
   }
   
+  //1200+
+  @media screen and(min-width:1200px){
+    .about-us__list {
+      display: flex;
+    }
+       .about-us__item {
+    min-width: 270px;
+    min-height: 251px;
+    flex-basis: calc((100% - 120px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  }
+ 
   .about-us__item::before {
     content: '';
     display: block;
@@ -32,3 +66,4 @@
   .icon-astronaut::before {
     background-image: url(..//images/astronaut.png);
   }
+ 
