@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+      <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <!--=========HEADER========-->
-    <header class="header ">
+    <header class="header">
         <div class="container header-wrapper">
             <nav class="header__nav">
-            <a class="logo header-logo" href="index.html">Web<span class="logo2">Studio</span></a>
+            <a class="logo" href="index.html">Web<span class="logo2">Studio</span></a>
             <ul class="menu list">
                 <li class="menu__item"><a class="menu__link menu__link-current" href="index.html">Студия</a></li>
                 <li class="menu__item"><a class="menu__link link " href="portfolio.html">Портфолио</a></li>
@@ -47,8 +42,8 @@
                   <use href="./images/sprint.svg#menu_burger"></use>
                 </svg>
               </button>
-
-              <!-- Мобильное меню -->
+        </div>
+          <!-- Мобильное меню -->
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <button class="mobile-menu__btn" data-menu-close>
@@ -88,11 +83,11 @@
             </li>
           </ul>
         </div>
-        </div>
+      </div>
     </header>
     <main>
         <!--============HERO=========-->
-        <section class="hero section">
+        <section class="hero">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button class="modal-bth" type="button" data-modal-open>Заказать услугу</button>
         </section>
@@ -172,7 +167,7 @@
         </section>
         <!--==============Наша команда==============-->
         <section class="our-team section">
-            <div class="container ">
+            <div class="container">
             <h2 class="our-team__title-h2">Наша команда</h2>
             <ul class="our-team__list list">
                 <li class="our-team__item">
@@ -407,9 +402,9 @@
             </div>
         </section>
         <!-- =======CLIENTS=========== -->
-         <section class="clients">
+        <section class="clients section">
             <div class="container">
-            <h2 class="clients-title-h2">Постоянные клиенты</h2>
+            <h2 class="title-h2">Постоянные клиенты</h2>
             <ul class="clients-list list">
                 <li class="clients-list-item">
                     <a href="" class="clients-list-link link">
@@ -507,7 +502,7 @@
         </div>
         <div class="form-footer">
             <h3 class="h3-footer">Подпишитесь на рассылку</h3>
-            <form name="signup_form">
+            <form name="signup_form" class="form-footer-form">
                 <label>
                     <input class="input-footer" type="email" name="user-mail" placeholder="E-mail" required>
                 </label>
@@ -520,8 +515,8 @@
         </div>
         </div>
         </footer>
-        <!--==========MODAL WINDOW========== -->
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <!-- /*==========MODAL WINDOW==========*/ -->
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button"  class="close-button" data-modal-close>
                     <svg class="close-btn">
@@ -568,9 +563,9 @@
                     <button class="modal-form-btn" type="submit">Отправить</button>
                 </form> 
             </div>
-        </div> -->
+        </div>
         
-           <script src="./js/modal.js"></script> 
+          <script src="./js/modal.js"></script>
           <script src="./js/menu.js"></script>
 </body>
 </html>
