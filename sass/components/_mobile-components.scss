@@ -4,7 +4,6 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
     overflow: auto;
     z-index: 15;
     background-color: #ffffff;
@@ -12,6 +11,7 @@
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms linear, visibility 250ms linear, transform 250ms linear;
+    
   }
   .mobile-menu.is-open {
     opacity: 1;
@@ -22,6 +22,7 @@
   .mobile-menu__container {
     position: relative;
     padding: 48px 83px 48px 40px;
+  
   }
 
   .mobile-menu__btn {
