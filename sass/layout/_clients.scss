@@ -39,6 +39,11 @@
   margin-bottom: 50px;
   font-size: 28px;
   line-height: 1.18;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--main-color);
 }
 .clients-list-item {
   flex-basis: calc((100% - 180px) / 6);
