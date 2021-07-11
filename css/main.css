@@ -237,15 +237,22 @@ body {
     position: absolute;
     top: 10px;
     right: 15px;
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     border: none;
-    padding: 0;
+    padding: 0px;
     display: inline-flex;
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-menu__btn:hover, .mobile-menu__btn:focus {
     fill: var(--accent-color);
+  }
+  .mobile-menu__btn .mobile-menu__icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
   }
   .mobile-nav {
     margin-bottom: 302px;
@@ -717,6 +724,23 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .header-wrapper {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .header__mobile-menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 10px;
+  }
+  .header__mobile-menu-btn .header__mobile-menu-icon {
+    position: relative;
+    top: 12px;
+    left: 8px;
+  }
   .menu {
     display: none;
   }
@@ -1271,11 +1295,19 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .form-footer {
+    width: 450px;
+  }
   .form-footer-form {
     display: flex;
-    margin-left: auto;
-    align-items: baseline;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+  }
+  .btn-send {
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: 0px;
   }
 }
 
@@ -1296,6 +1328,18 @@ body {
   }
   .footer-social {
     margin-right: 93px;
+  }
+  .form-footer {
+    width: 570px;
+  }
+  .form-footer-form {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .btn-send {
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .footer-address {
     font-style: normal;
