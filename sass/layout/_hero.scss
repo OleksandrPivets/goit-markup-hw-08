@@ -9,7 +9,7 @@
     color: #ffffff;
     background-color: #2f303a;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/mob/hero.jpg);
+      url(../images/mob/hero.webp);
     background-size: cover;
   
     &__title {
@@ -50,7 +50,7 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/mob/hero@2x.jpg);
+        url(../images/mob/hero@2x.webp);
     }
   }
 
@@ -60,12 +60,12 @@
     .hero {
       max-width: 1199px;
       background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/tablet/hero.jpg);
+        url(../images/tablet/hero.webp);
     }
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       .hero {
         background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../images/tablet/hero@2x.jpg);
+          url(../images/tablet/hero@2x.webp);
       }
     }
   }

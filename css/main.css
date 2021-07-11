@@ -62,7 +62,7 @@ body {
   .section {
     max-width: 1600px;
     padding-top: 94px;
-    padding-bottom: 0px;
+    padding-bottom: 94px;
   }
 }
 
@@ -870,7 +870,7 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/hero.webp);
   background-size: cover;
 }
 
@@ -904,20 +904,20 @@ body {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/hero@2x.webp);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 1199px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero.webp);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero@2x.webp);
   }
 }
 
@@ -1307,7 +1307,6 @@ body {
   .btn-send {
     margin-left: 125px;
     margin-right: 125px;
-    margin-top: 0px;
   }
 }
 
@@ -1340,6 +1339,7 @@ body {
   .btn-send {
     margin-left: 0px;
     margin-right: 0px;
+    margin-top: 0px;
   }
   .footer-address {
     font-style: normal;
